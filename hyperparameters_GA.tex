@@ -1,0 +1,21 @@
+
+\begin{table}[h!]
+\begin{center}
+  \caption{Hyperparameters for the genetic algorithm. {\it Mutation $\sigma$ factor} is a factor used to set the standard deviation of the gaussian mutation. We use $\sigma = \frac{\mu^-}{\alpha}$ where $\alpha$ is the factor and $\mu^-$ defined by $\underset{i,j}{\min}{~ \mu_i - \mu_j}$.}
+  %\resizebox{12cm}{!}{
+  \begin{small}
+\begin{tabular}{|l|c|c|}
+\hline
+  Dataset & Generations & Mutation $\sigma$ factor \\ \hline
+ \texttt{adult} & 200 & 10000 \\
+  \texttt{breasts} & 200 & 10 \\
+  \texttt{heart} & 200 & 10 \\
+    \texttt{phishing} & 100 & 1000 \\
+    \texttt{skin} & 100 & 1000 \\
+    \texttt{splice} & 200 & 100 \\\hline
+\end{tabular}
+\end{small}
+  %}
+  \label{table:hyperparameters_ga}
+\end{center}
+\end{table}

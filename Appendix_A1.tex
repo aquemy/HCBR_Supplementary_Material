@@ -1,0 +1,10 @@
+For a training iteration $k$, let assume a case $\mathbf x_i$ with a strength $S_k(\mathbf x_i)$ that is wrongly classified. The update rule on $\mu$ implies that $S_{k+1}(\mathbf x_i) \in [-|S_k(\mathbf x_i)|, S_k(\mathbf x_i)]$. Any case $\mathbf x_j$ such that $\mathbf x_i \cap \mathbf x_j \neq \emptyset$ is modified, and in the same direction (toward the same class). Let us assume that $S_k(\mathbf x_i) < 0$ such that after the update rule $S_{k+1}(\mathbf x_i) > S_k(\mathbf x_i)$. Then, $S_{k+1}(\mathbf x_j) > S_{k}(\mathbf x_{j})$.
+
+The only problematic case is when $y_j = 0$, $S_{k}(\mathbf x_j) < 0$ but $S_{k+1}(\mathbf x_j) > 0$ (that is to say that $\mathbf x_j$ become wrongly classified due to the modification of $\mu$ involved by $\mathbf x_i$).
+
+Let us consider any $\mu_l$ for a $e_l$ that is included in $\mathbf x_i$ and $\mathbf x_j$. When $\mu_l$ is modified, then $|S(x_j)|$ is smaller because by definition $|w(e_l, x_j) \mu_l| \leq |S(x_j)|$.
+
+As a result, both the case that {\it triggers} the modification of $\mu$ and the cases that are consequently modified have a strength that is closer to $0$ than before the modification.
+
+Therefore, there are only two possible cases: \begin{itemize} \item All cases become correctly classified and the process stops. \item Some cases cannot be properly classified within the model space and switch iterations after iterations between classes. Their strength converges toward 0. It does not imply that the process converges toward the best possible accuracy. \end{itemize}
+
