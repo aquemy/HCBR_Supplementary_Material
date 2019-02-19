@@ -1,0 +1,90 @@
+
+\begin{table}[h!]
+  \caption{Comparison of HCBR with several methods (Scikit-Learn implementation) w.r.t. MCC. }
+
+\fontsize{10pt}{12pt}\selectfont 
+\begin{tabular}{|c|l|l|c|}
+\hline
+ Dataset & Method & MCC & \#  \\ \hline
+
+\multirow{}{}{\texttt{adult}} & \bfHCBR & 0.5146 & 3 \\
+& AdaBoost & 0.5455  & 1 \\
+& k-NN & 0.4785 & 7 \\
+& Linear SVM & 0.4918 & 5\\
+& RBF SVM & 0.5065 & 4\\
+& Decision Tree & 0.4821  & 6\\
+& Rand. Forest & 0.3776 & 8 \\
+& Neural Net & 0.5349  & 2 \\
+& Naive Bayes & 0.2493 & 9\\
+& QDA & 0.4785  & 7 \\ \hline
+
+\multirow{}{}{\texttt{breast}} & \bfHCBR & 0.9222 & 3 \\
+& AdaBoost & 0.9023 & 6\\
+& k-NN & 0.9163 & 4\\
+& Linear SVM & 0.9126 & 5\\
+& RBF SVM & 0.8829 & 8\\
+& Decision Tree & 0.8760 & 9\\
+& Rand. Forest & 0.9296 & 1\\
+& Neural Net & 0.9280 & 2\\
+& Naive Bayes & 0.8991 & 7\\
+& QDA & 0.8616 & 10\\ \hline
+
+\multirow{}{}{\texttt{heart}} & \bfHCBR & 0.7082 & 1 \\
+& AdaBoost & 0.5972  & 6\\
+& k-NN & 0.5879 & 7\\
+& Linear SVM & 0.6849 & 4\\
+& RBF SVM & 0.6287 & 5 \\
+& Decision Tree & 0.5763  & 8\\
+& Rand. Forest &0.5703 & 9\\
+& Neural Net & 0.6995 & 2\\
+& Naive Bayes & 0.6932 & 3\\
+& QDA & 0.4500 & 10 \\ \hline
+
+\multirow{}{}{\texttt{mushrooms}} & \bfHCBR & 0.9995 & 2 \\
+& AdaBoost & 1.0000 & 1\\
+& k-NN & 0.9993 & 3\\
+& Linear SVM & 1.0000 & 1\\
+& RBF SVM & 0.9990 & 5\\
+& Decision Tree &  0.9991& 4\\
+& Rand. Forest & 0.8840  & 7\\
+& Neural Net &1.0000 & 1\\
+& Naive Bayes & 0.9767 & 6\\
+& QDA & 1.0000 & 1\\ \hline
+
+
+\multirow{}{}{\texttt{phishing}} & \bfHCBR & 0.9191 &  1\\
+& AdaBoost & 0.8637 & 6\\
+& k-NN & 0.9138 & 4\\
+& Linear SVM & 0.8740 & 5\\
+& RBF SVM & 0.9286 & 2\\
+& Decision Tree & 0.8585 & 7\\
+& Rand. Forest & 0.7582 & 8\\
+& Neural Net & 0.9448 & 1\\
+& Naive Bayes & 0.5292 & 10\\
+& QDA & 0.5872 & 9\\ \hline
+
+\multirow{}{}{\texttt{skin}} & \bfHCBR & 0.9551 & 4 \\
+& AdaBoost & 0.8552 & 8\\
+& k-NN & 0.9982 & 1 \\
+& Linear SVM & 0.8090 & 9\\
+& RBF SVM & 0.9950 & 3 \\
+& Decision Tree & 0.9544 & 5\\
+& Rand. Forest & 0.9539 & 6\\
+& Neural Net & 0.9967 & 2\\
+& Naive Bayes & 0.7600 & 10\\
+& QDA & 0.9483 & 7\\ \hline
+
+\multirow{}{}{\texttt{splice}} & \bfHCBR & 0.8857 & 2 \\
+& AdaBoost & 0.8801 & 3\\
+& k-NN & 0.6072 & 9\\
+& Linear SVM & 0.7282 & 8\\
+& RBF SVM & 0.8461 & 4 \\
+& Decision Tree & 0.8998 & 1\\
+& Rand. Forest & 0.5925 & 10\\
+& Neural Net & 0.8390 & 5\\
+& Naive Bayes & 0.7595 & 7\\
+& QDA & 0.8251 & 6\\ \hline
+\end{tabular}
+
+  \label{table:scikit_all_mcc}
+\end{table}

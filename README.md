@@ -11,7 +11,11 @@ accuracy.](#appendix-a3)
 
 ## Appendix A1
 
+![](Appendix_A1.png)
+
 ## Appendix A2
+
+![](Appendix_A2.png)
 
 ## Appendix A3
 
@@ -19,4 +23,18 @@ accuracy.](#appendix-a3)
 
 ## Appendix A4
 
+![](mcc_by_examples_adult.png)
+
+![](mcc_by_examples_breast.png)
+
+![](mcc_by_examples_heart.png)
+
+![](mcc_by_examples_phishing.png)
+
+![](mcc_by_examples_skin.png)
+
+![](mcc_by_examples_splice.png)
+
 ## Appendix A5
+
+![](Appendix_A5.png)
